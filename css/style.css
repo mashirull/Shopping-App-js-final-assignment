@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inspiration&family=Montserrat:wght@300&family=Open+Sans:wght@300;400;500;600;800&family=Poppins:wght@300&family=Shalimar&family=Shrikhand&family=Source+Sans+Pro:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.d_block{
+    display: inline-block;
+}
+.dis_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------=======Topbar=======-------------- */
+
+.topbar{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    box-shadow: 0 2px 5px #ccc;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+.logo a{
+    color: black;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    color: black;
+}
+
+.logo span{
+    font-weight: 300;
+    
+}
+
+.menu_items{
+    text-transform: uppercase;
+}
+
+.menu_items li{
+    list-style-type: none;
+    padding: 5px 20px;
+    font-weight: 500px;
+}
+
+.menu_items li a{
+    text-decoration: none;
+    color: black;
+}
+
+.cart{
+    margin-right: 30px;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.cart_count{
+    font-weight: 500;
+    font-size: 12px;
+    background-color: rgb(0, 150, 136);
+    /* padding: 3px; */
+    padding-top: 4px;
+    border-radius: 50%;
+    color: white;
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    text-align: center;
+}
+
+
+.prifile_pic{
+    height: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/* -------=======Topbar End=======-------------- */
+
+
+/* -----------==============carousel==============--------------- */
+
+.slide_banner_section{
+    padding: 20px 30px;
+    z-index: -9999;
+}
+
+.carousel{
+    margin: 0px 80px;
+}
+
+/* -----------==============carousel End==============--------------- */
+
+
+
+/*------------------ product card section---------------------------------- */
+
+.clothing{
+    margin: 25px 0px;
+}
+
+.card{
+    /* border: 1px solid red; */
+    margin: 6px;
+    width: 190px;
+    height: 375px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 6px gray;
+
+}
+
+.bg_img{
+    width: 100%;
+    height: 245px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.content{
+    padding: 10px;
+}
+
+.content h2{
+    font-size: 16px;
+    
+}
+
+.content p{
+    font-size: 12px;
+    font-weight:600;
+    padding: 8px 0px;
+    color: black;
+}
+
+.content h3{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(3, 145, 145);
+}
+
+
+.d_flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card_container{
+    padding: 25px 50px;
+}
+
+.heading{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(27, 25, 25);
+    padding-left: 30px;
+}
+
+
+
+#Product_section{
+    padding: 2%  4%;
+}
+
+/*------------------ product card section  End---------------------------------- */
+
+
+
+
+/* -----------==========product details page===============------------ */
+
+
+.product_details_container{
+    padding: 5% 50px;
+    justify-content: center;
+    min-height: 115vh;
+    display: none;
+}
+
+
+.preview_img_box{
+    width: 350px;
+    max-height: 450px;
+}
+
+.preview_img_box img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.details_box{
+    width: 600px;
+    margin-left: 100px;
+}
+
+.product_name h1{
+    font-size: 48px;
+    font-weight: 400;
+}
+.brand h3{
+    font-size: 24px;
+    font-weight: 500;
+    /* padding-bottom: 10px; */
+}
+
+.price h3{
+    font-size: 24px;
+    color:rgba(0, 0, 0, 0.8) ;
+    line-height: 4;
+}
+
+
+.price span{
+    color:rgb(0, 150, 136);
+}
+
+.description h2{
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.description p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.product_preview_img h2{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+.preview_img img{
+    width: 65px;
+    height: 80px;
+    margin:8px ;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.add_to_cart {
+    font-size: 19px;
+    font-weight: 600;
+    padding: 14px 20px;
+    border-radius: 8px;
+    background-color: rgb(0, 150, 136);
+    color: white;
+    border: none;
+    margin-top: 25px;
+}
+
+.bigger{
+    transform: scale(1.1);
+}
+
+.active_img{
+    border: 2px solid rgb(0, 150, 136);
+    border-radius: 6px;
+}
+
+
+
+/* -----------==========product details page End===============------------ */
+
+
+
+
+/* ----------=============CheckOut page==============-------------- */
+.cart_box{
+    display: flex;
+    padding: 12px;
+    background-color:white;
+    width: 490px;
+    margin: 10px;
+    height: fit-content;
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px #ccc;
+}
+
+
+.cart_box_img{
+    height: 110px;
+    width: 80px;
+    display: inline-block;
+}
+
+.cart_box_img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.cart_content{
+    display: inline-block;
+    padding-left: 20px;
+
+
+    
+}
+
+
+.cart_main_container{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 40px 85px; */
+    padding: 0px  85px 40px 85px;
+
+}
+
+
+.product_name{
+    font-size: 18px;
+}
+
+.cart_page_title {
+    padding: 0px 85px;
+    margin-left: 10px;
+}
+
+.cart_page_title h1{
+    font-weight: 600;
+    font-weight: 400;
+    padding-bottom: 40px;
+    
+}
+
+.cart_page_title p{
+    font-size: 22px;
+        
+}
+
+.amount_box{
+    background-color:white;
+    margin-top: 10px;
+    height: fit-content;
+    width: 490px;
+    box-shadow: 0px 3px 5px #ccc;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.amount_box button{
+    font-size: 19px;
+    font-weight: 600;
+    padding: 14px 20px;
+    border-radius: 8px;
+    background-color: rgb(0, 150, 136);
+    color: white;
+    border: none;
+    margin-top: 35px;
+}
+.amount_box button:hover{
+    color: white;
+}
+.amount_box h3{
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.amount_box span{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+#cart_page{
+    padding-top: 40px;
+    display: none;
+}
+
+
+
+.itemCart{
+    display: flex;
+    padding: 12px;
+    background-color:white;
+    width: 510px;
+    margin: 10px;
+    height: fit-content;
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px #ccc; 
+}
+
+/* ----------=============CheckOut page End==============-------------- */
+
+
+/* ------------==========sussecc page==========------------------ */
+#success_page{
+    width: 100%;
+    height: 70vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_container{
+    text-align: center;
+}
+
+.page_container i{
+    font-size: 100px;
+    padding: 40px;
+    color: limegreen;
+}
+
+.page_container h2{
+    line-height: 1;
+}
+
+/* ------------==========sussecc page==========------------------ */
+
+
+.Edyoda-logo img{
+    width: 125px;
+}
+
+.Edyoda-logo{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #1c1b1e; 
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2% 4%;
+ }
+ 
+ footer > div {
+     padding-left: 50px;
+     padding-right: 50px;
+ }
+ 
+ footer > div:first-of-type {
+     padding-left: 0;
+ }
+ 
+ .footer-heading {
+     text-transform: uppercase;
+     font-weight: 600;
+     font-size: 16px;
+     color: white;
+     opacity: 0.9;
+     letter-spacing: 1px;
+ }
+ 
+ .footer-link {
+     text-decoration: none;
+     color: white;
+     display: block;
+     margin-top: 8px;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     font-size: 14px;
+     opacity: 0.8;
+ }
+
+
+
+ 

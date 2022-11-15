@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commercial shopping App</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+
+    
+</head>
+<body>
+    <!-- -------------navbar start------------------ -->
+    <div class="topbar">
+        <div class="left dis_flex">
+            <h1 class="logo"><a href="index.html">shop<span>lane</span></a> </h1>
+            <ul class="menu_items dis_flex">
+                <li><a href="index.html#clothing">clothing</a> </li>
+                <li><a href="#Accessory">accessories</a> </li>
+            </ul>
+        </div>
+        <div class="right dis_flex">
+            <div class="cart " onclick="goToCart()">
+                <i class="fa-solid fa-cart-shopping"> <span class="cart_count">0</span></i>
+            </div>
+            <img src="https://test-hosting-8f9bf.web.app/assets/avatar.jpg" alt="profile-img" class="prifile_pic">
+        </div>
+    </div>
+    
+    <!-- -------------navbar end------------------ -->
+
+  <!-- banner slider section-------------------------------- -->
+    <div class="slide_banner_section" id="slider">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/first.png" class="d-block w-100" alt="pic1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/second.png" class="d-block w-100" alt="pic2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/third.png" class="d-block w-100" alt="pic3">
+              </div>
+              <div class="carousel-item">
+                <img src="img/forth.png" class="d-block w-100" alt="pic4">
+              </div>
+            </div>
+            
+          </div>
+    </div>
+      <!-- banner slider section-------------------------------- -->
+      
+        
+
+    <section id="Product_section">
+        <div class="clothing" id="clothing">
+            <h1 class="heading" id="heading">Clothing for Men and Women</h1>
+            <div class="d_flex card_container" id="d_flex">
+                
+                
+            </div>
+        </div>
+    
+        <div class="Accesories" id="Accessory">
+            <h1 class="heading">Accesories for Men and Women</h1>
+            <div class="d_flex card_container" id="d_flex2">
+               
+            </div>
+        </div>
+    </section>  
+
+
+    <section id="product_details">
+        <div class="product_details_container ">
+        </div>
+        
+    </section>
+
+
+
+    
+
+
+<section id="cart_page">
+    <div class="cart_page_title">
+        <h1>Checkout</h1>
+        <p>Totle Items: <span class="totle_item">0</span> </p>
+    </div>
+    <div class="cart_main_container">
+        <div class="cart_table_container">
+
+        </div>
+        <div class="amount_box">
+            <h3>Total Amount</h3>
+            <p>Amount: Rs <span class="totle_amount">0</span></p>
+            <button class="btn" id="place_order_btn">Place Order</button>
+        </div>
+    </div>
+</section>
+
+
+<section id="success_page">
+     <div class="page_container">
+        <i class="fa-sharp fa-solid fa-circle-check"></i>
+        <h2>Order Place Successfully!!</h2>
+        <p>We have sent you an email with the Order details</p>
+     </div>
+</section>
+
+
+<div class="Edyoda-logo">
+    <img src="img/OKAY6Fl.png" alt="Edyoda-logo">
+</div>
+
+
+    <footer id="footer">
+        <footer>
+            <div>
+                <p class="footer-heading">Online Store</p>
+                <a href="/" class="footer-link">Men Clothing</a>
+                <a href="/" class="footer-link">Women Clothing</a>
+                <a href="/" class="footer-link">Men Accessories</a>
+                <a href="/" class="footer-link">Women Accessories</a>
+            </div>
+            <div>
+                <p class="footer-heading">Helpful Links</p>
+                <a href="/" class="footer-link">Home</a>
+                <a href="/" class="footer-link">About</a>
+                <a href="/" class="footer-link">Contact</a>
+            </div>
+            <div>
+                <p class="footer-heading">Partners</p>
+                <a href="/" class="footer-link">Zara</a>
+                <a href="/" class="footer-link">Pantaloons</a>
+                <a href="/" class="footer-link">Levis</a>
+                <a href="/" class="footer-link">UCB</a>
+                <a href="/" class="footer-link">+ Many More</a>
+            </div>
+            <div>
+                <p class="footer-heading">Address</p>
+                <p href="/" class="footer-link">Building 101</p>
+                <p href="/" class="footer-link">Central Avenue</p>
+                <p href="/" class="footer-link">LA - 902722</p>
+                <p href="/" class="footer-link">United States</p>
+            </div>
+        </footer>
+
+    </footer>  
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
